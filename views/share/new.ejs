@@ -1,0 +1,19 @@
+
+
+<%- include('../partials/header'); -%>
+<%- include('../components/navbar'); -%>
+
+
+
+<form class="needs-validation" method="post" action="/new" novalidate>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="Title" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Whats On Your Mind" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Share Your Thought</label>
+        <textarea name="post" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+      </div>
+      <button class="btn btn-success">Submit</button>
+</form>
+<%- include('../partials/footer'); -%>

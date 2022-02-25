@@ -1,0 +1,21 @@
+<%- include('../partials/header'); -%>
+<%- include('../components/navbar'); -%>
+<form class="needs-validation" method="post" action="" novalidate>
+    <div class="mb-3">
+        <label class="form-label" for="username">Email</label>
+        <input class="form-control" type="text" id="username" name="email" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" type="password" id="password" name="password" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <button class="btn btn-success">Login</button>
+</form>
+<%- include('../partials/footer'); -%>

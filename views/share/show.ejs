@@ -1,0 +1,36 @@
+
+
+  
+   
+
+    
+
+
+
+     
+
+
+
+
+     <%- include('../partials/header'); -%>
+<%- include('../components/navbar'); -%>
+
+<h1>Show Post</h1>
+<ul class="list-group">
+     <% for (let post of posts) { %>
+         <center> <li class="list-group-item list-group-item-info "> <a href="show/<%= post._id %>"><%= post.title %></a></li></center>
+         
+         <% } %>
+    
+     
+   </ul>
+
+
+
+
+
+
+<%- include('../partials/footer'); -%>
+
+
+
